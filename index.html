@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Venkatesan Sakthivel, showcasing skills, projects, and contact details for a software engineer passionate about building user-friendly applications.">
+    <meta name="keywords" content="Venkatesan Sakthivel, Portfolio, Software Engineer, Web Developer, Projects, Skills">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Venkatesan Portfolio</title>
+    <style>
+        body, html {
+            margin: 10;
+            padding: 10;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        nav {
+            background-image: url('firrst.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(255, 250, 250);
+            height: 7vh;
+            display: flex;
+            flex-direction: column;
+            justify-content:end;
+            align-items:self-end;
+                    padding: 15px 0;
+                    position: sticky;
+                    top: 0;
+                    z-index: 10;
+                    width: 100%;
+                }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        
+
+
+
+.logo:hover::before {
+    width: 0; /* Disappears on hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slightly enlarges the logo on hover */
+}
+
+
+        .logo span {
+            color: #160a03;
+        }
+
+        .links {
+            display: flex;
+        }
+
+        .link {
+            margin-left: 20px;
+        }
+
+        .link a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 3rem;
+        }
+
+        .hamburg, .cancel {
+            display: none;
+            font-size: 1.5rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ebe5e5;
+            transform: translateY(-500px);
+            transition: transform 0.3s ease;
+        }
+
+        .dropdown .links a {
+            display: block;
+            padding: 10px;
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align:left;
+        }
+        #home h1 {
+    color: #ffffff; /* Heading color for Home section */
+}
+
+#home .typewriter {
+    color: #ffffff; /* Text color for typewriter effect */
+}
+#content {
+    color: #ffffff; /* Heading color for Home section */
+}
+
+#content .typewriter {
+    color: #ffffff; /* Text color for typewriter effect */
+}
+#contact h2 {
+    color: #ff6347; /* Example color for the heading */
+}
+
+#contact ul li {
+    color: #ffffff; /* Example color for list items */
+}
+
+        #home {
+    background-image: url('firrst.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(253, 252, 252);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cd2323;
+}
+
+#about {
+    background-image: url('firrst.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills {
+    background-image: url('firrst.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projects {
+    background-image: url('firrst.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact {
+    background-image: url('firrst.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame {
+            width: 350px; /* Set the width of the square */
+            height: 350px; /* Set the height of the square */
+            overflow: hidden; /* Ensure the image doesn't overflow the frame */
+            border: 1px solid #f427b6; /* Optional: add a border to the frame */
+            display: flex; /* Optional: center the image */
+            justify-content:center; /* Optional: center the image horizontally */
+            align-items: center; /* Optional: center the image vertically */
+            border-radius: 10%;
+        }
+
+        .photo-frame img {
+            width: 100%; /* Ensure the image takes full width */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure the image covers the frame */
+        }
+        .typewriter-text {
+    color: #deff07;  /* Example color */
+    font-size: 40px; /* Adjust the font size */
+    font-weight: bold; /* Example of bold text */
+}
+
+        .typewriter {
+            font-size: 1.5rem;
+        }
+
+        
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-container ul, .projects-container ul {
+            list-style: none;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .links {
+                display: none;
+            }
+
+            .hamburg {
+                display: block;
+            }
+
+            .dropdown {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                 
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Certificates</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900" style="font-size:40px"> <strong>I'm a</strong> <span class="typewriter-text"></span><label>|</label></div>
+        <div class="main-container">
+            
+            <div class="photo-frame" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="profile.jpeg" alt="Venkatesan's profile">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700" style="font-size: 54px;"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hey,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #bfff10;">Venkatesan</span></h1>
+
+            </div>
+            
+        </div>
+        
+    </section>
+
+    <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+        
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am a passionate aspiring software engineer, eager to learn and make meaningful contributions. Dedicated to developing user-friendly, visually appealing applications, I am seeking opportunities to grow and collaborate in the fast-paced world of software development.</p>
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>React.js</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1: Web-based Task Manager</li>
+                <li>Project 2: Mobile To-Do List App</li>
+                <li>Project 3: Python Automation Script</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+        <div class="contact-container">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: venkatesan@example.com</li>
+                <li>Phone: +123 456 7890</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/venkatesan-sakthivel-a514b6285/" target="_blank">Connect with me on LinkedIn</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://github.com/Venkatesan22103" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/venkatesan-sakthivel-a514b6285/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        
+        AOS.init({ offset: 0 });
+
+        // Hamburger Menu Functionality
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+
+        // JavaScript to smoothen mouse scroll speed
+        window.addEventListener('wheel', function(event) {
+            event.preventDefault();
+            window.scrollBy({
+                top: event.deltaY * 2,  // Faster scrolling (increase value)
+                behavior: 'smooth'
+            });
+        }, { passive: false });
+
+        // Typewriter Effect
+        const texts = [
+            "DEVELOPER",
+            "PROGRAMMER"
+        ];
+
+        let speed = 100;
+        const textElements = document.querySelector(".typewriter-text");
+
+        let textIndex = 0;
+        let charcterIndex = 0;
+
+        function typeWriter() {
+            if (charcterIndex < texts[textIndex].length) {
+                textElements.innerHTML += texts[textIndex].charAt(charcterIndex);
+                charcterIndex++;
+                setTimeout(typeWriter, speed);
+            } else {
+                setTimeout(eraseText, 1000);
+            }
+        }
+
+        function eraseText() {
+            if (textElements.innerHTML.length > 0) {
+                textElements.innerHTML = textElements.innerHTML.slice(0, -1);
+                setTimeout(eraseText, 50);
+            } else {
+                textIndex = (textIndex + 1) % texts.length;
+                charcterIndex = 0;
+                setTimeout(typeWriter, 500);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
+</body>
+</html>
